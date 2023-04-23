@@ -13,8 +13,9 @@ def process():
             input_num = int(line)
             # if even
             if input_num % 2 == 0:
-            #   write to even.txt
-                output_even.write(str(input_num))
-            # else:
-            #   write to odd.txt
+                # write to even.txt
+                output_even.write(str(input_num) + "\n")
+            else:
+                # write to odd.txt
+                output_odd.write(str(input_num) + "\n")
 process()
