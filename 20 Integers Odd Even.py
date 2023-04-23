@@ -10,9 +10,11 @@ def process():
     with open("numbers.txt") as input_numbers, open("even.txt", "a") as output_even, open("odd.txt", "a") as output_odd:
         # read integers line by line
         for line in input_numbers:
-            print(line.strip())
-    # if even
-    #   write to even.txt
-    # else:
-    #   write to odd.txt
+            input_num = int(line)
+            # if even
+            if input_num % 2 == 0:
+            #   write to even.txt
+                output_even.write(str(input_num))
+            # else:
+            #   write to odd.txt
 process()
